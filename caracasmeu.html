@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário de Oportunidade</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #003a70;
+      }
+      
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ccc;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="number"],
+      select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      input[type="submit"] {
+        background-color: #003a70;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #1c6ab9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulário de Oportunidade</h1>
+    <form>
+      <label>
+        <input type="checkbox" name="particular"> Particular
+      </label>
+      <label>
+        Nome da Oportunidade:
+        <input type="text" name="nome">
+      </label>
+      <label>
+        Valor:
+        <input type="number" name="valor">
+      </label>
+      <label>
+        Fase:
+        <select name="fase">
+          <option value="Prospect">Prospect</option>
+          <option value="Qualificação">Qualificação</option>
+          <option value="Desenvolvimento">Desenvolvimento</option>
+          <option value="Proposta">Proposta</option>
+          <option value="Fechamento">Fechamento</option>
+        </select>
+      </label>
+      <label>
+        Tipo:
+        <select name="tipo">
+          <option value="Novo Cliente">Novo Cliente</option>
+          <option value="Venda Adicional">Venda Adicional</option>
+          <option value="Renovação">Renovação</option>
+          <option value="Parceiro">Parceiro</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </label>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
